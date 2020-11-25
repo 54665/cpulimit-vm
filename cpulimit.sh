@@ -8,7 +8,7 @@ nid=`ps aux | awk '{ if ( $3 > 40 ) print $2 }' | head -1`
 
 if [ "${nid}" != "" ] && [ "${nid}" != "${id}" ] ; then
 
-    cpulimit -p ${nid} -l 15 &
+    cpulimit -p ${nid} -l 20 &
 
     echo "[`date`] CpuLimiter run for ${nid} `ps -ef | grep ${nid} | awk '{print $8}' | head -1`" >> /root/cpulimit-log.log
 
