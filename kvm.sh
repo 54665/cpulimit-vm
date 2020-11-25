@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# AWS流量阈值脚本副脚本
+# 安装脚本
 #
 # Copyright (c) 2020.
 
