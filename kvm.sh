@@ -13,5 +13,5 @@ echo "写入自启"
 chmod +x /etc/rc.d/rc.local
 echo "/root/cpulimit-vm.sh >/root/cpulimit-vm.sh/cpulimit.sh.log 2>&1" >> /etc/rc.d/rc.local
 echo "后台运行中"
-nohup /root/cpulimit-vm.sh >> /dev/null 2>&1 &
+nohup /root/cpulimit.sh >> /dev/null 2>&1 &
 echo "脚本执行完毕，默认基准20%，突发值40%后开始限制"
